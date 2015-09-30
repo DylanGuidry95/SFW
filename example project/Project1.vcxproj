@@ -121,6 +121,7 @@
   <ItemGroup>
     <ClCompile Include="Cells.cpp" />
     <ClCompile Include="DrawObjects.cpp" />
+    <ClCompile Include="Grid.cpp" />
     <ClCompile Include="sfwexample.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +130,7 @@
   <ItemGroup>
     <ClInclude Include="Cells.h" />
     <ClInclude Include="DrawObjects.h" />
+    <ClInclude Include="Grid.h" />
     <ClInclude Include="sfwdraw.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

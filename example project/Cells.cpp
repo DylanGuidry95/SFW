@@ -1,13 +1,37 @@
 #include "Cells.h"
-#include "DrawObjects.h"
 
-void Cells::genGrid(int rows, int cols)
+Cells::Cells(int a_xPos, int a_yPos)
 {
-	for (int i = 0; i <= rows; i++)
-		for (int j = 0; j <= cols; i++)
-		{
-			xPos = i;
-			yPos = j;
-			Objects::drawRect(xPos, yPos, 20);
-		}
+	xPos = a_xPos;
+	yPos = a_yPos;
+
+	hasWumpus = false;
+	hasPit = false;
+	hasGold = false;
+}
+
+int Cells::setXPos(int pos)
+{
+	xPos = pos;
+	return xPos;
+}
+int Cells::setYPos(int pos)
+{
+	yPos = pos;
+	return yPos;
+}
+bool Cells::setWumpus(bool state)
+{
+	hasWumpus = state;
+	return hasWumpus;
+}
+bool Cells::setGold(bool state)
+{
+	hasGold = state;
+	return hasGold;
+}
+bool Cells::setPit(bool state)
+{
+	hasPit = state;
+	return hasPit;
 }
